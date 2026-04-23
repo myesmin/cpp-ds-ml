@@ -1,4 +1,5 @@
 echo "app
-main
+*.DS_Store
 *.o
-*.out" > .gitignore
+*.out
+" > .gitignore
