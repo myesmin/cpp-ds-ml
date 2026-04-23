@@ -1,0 +1,4 @@
+echo "app
+main
+*.o
+*.out" > .gitignore
