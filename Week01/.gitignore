@@ -1,5 +1,0 @@
-echo "app
-*.DS_Store
-*.o
-*.out
-" > .gitignore

@@ -1,0 +1,12 @@
+# Binaries
+app
+*.o
+*.out
+*.exe
+a.out
+
+# System & IDE
+.DS_Store
+**/.DS_Store
+.vscode/
+.cursor/
