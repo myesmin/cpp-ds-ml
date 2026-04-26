@@ -110,7 +110,7 @@ int main() {
     }
     return 0;
 }
-*/
+
 
 int main() {
     for (int i = 0; i < 5; i++) {
@@ -118,3 +118,17 @@ int main() {
     }
     return 0;
 }
+
+
+int main() {
+    for (int i = 1; i < 6; i++) { // start at 1, stop before 6
+        std::cout << i << "\n";
+    }
+    return 0;
+}
+
+*/
+
+
+
+
