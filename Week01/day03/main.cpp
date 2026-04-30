@@ -127,7 +127,183 @@ int main() {
     return 0;
 }
 
+int main() {
+    for (int i = 1; i <= 5; i++) { // start at 1, stop at 5 (<=)
+        std::cout << i << "\n";
+    }
+    return 0;
+}
+
+
+int main() {
+    int i = 0;
+    while (i < 5) {
+        std::cout << i << "\n";
+        i++;
+    }
+}
+
+
+
+// Two types of loop
+// for loop - when you know HOW many times
+int main() {
+    for (int i = 0; i < 5; i++) {
+        std::cout << i << "\n";
+    }
+    return 0;
+}
+
+// while loop — when you DON'T know how many times
+int main() {
+    int i = 0;
+    while (i < 5) {
+        std::cout << i << "\n";
+        i++;
+    }
+    return 0;
+}
+
+
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        std::cout << i << "\n";
+    }
+    return 0;
+}
+
+
+int main() {
+    int i = 1;
+    while (i <= 10) {
+        std::cout << i << "\n";
+        i++;
+    }
+    return 0;
+}
+
+
+// running both inside one main() function 
+
+int main() {
+
+    //for loop
+    for (int i = 1; i <= 10; i++) {
+        std::cout << i << "\n";
+    }
+
+    std::cout << "---" << "\n"; //separator 
+
+    //while loop
+    int i = 1;
+    while (i <= 10) {
+        std::cout << i << "\n";
+        i++;
+    }
+
+    return 0;
+}
+
+
+//BREAK 
+
+int main() {
+    for (int i = 0; i < 5; i++) {
+        if (i == 3) {
+            break;
+        }
+        std::cout << i << "\n";
+    }
+    return 0; 
+}
+
+
+//CONTINUE
+int main() {
+    for (int i = 0; i < 5; i++) {
+        if (i == 3) {
+            continue;
+        }
+        std::cout << i << "\n";
+    }
+    return 0;
+}
+
+//for ML
+// break — stop training if loss is good enough
+if (loss < 0.001) {
+    break;
+}
+
+// continue — skip bad/corrupted data samples
+if (isBadData) {
+    continue;
+}
+
+
+
+//switch
+// Using if/else
+int main() {
+    int day = 2;
+
+    if (day == 1) {
+        std::cout << "Monday" << "\n";
+    } else if (day == 2) {
+        std::cout << "Tuesday" << "\n";
+    } else if (day == 3) {
+        std::cout << "Wednesday" << "\n";
+    } else {
+        std::cout << "Other Days" << "\n";
+    }
+    return 0; 
+}
+
+//using switch - cleaner! 
+int main() {
+    int day = 2;
+    switch (day) {
+        case 1:
+            std::cout << "Monday" << "\n";
+            break; 
+            
+        case 2:
+            std::cout << "Tuesday" << "\n";
+            break;
+        
+        case 3:
+            std::cout << "Wednesday" "\n";
+            break;
+        
+        default:
+            std::cout << "Other day" << "\n";    
+    }
+    return 0;
+}
+
 */
+
+int main() {
+    int day = 2;
+
+    switch (day) {
+        case 1:
+            std::cout << "Monday" << "\n";
+        case 2:
+            std::cout << "Tuesday" << "\n";
+        case 3:
+            std::cout << "Wednesday" << "\n";
+        default:
+            std::cout << "Other days" << "\n";
+    }
+    return 0;
+
+}
+
+
+
+
+
 
 
 
