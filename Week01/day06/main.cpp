@@ -1,5 +1,6 @@
 #include <iostream>
 
+//Excercise
 /* 
 int main() {
     int x = 42;
@@ -8,7 +9,7 @@ int main() {
     return 0;
 }
 
-
+//Excercise
 int main() {
     int x = 42;
     int* p = &x;
@@ -21,7 +22,7 @@ int main() {
     return 0;
 }
 
-
+//Excercise
 int main() {
     int x = 42;
     int*  p = &x;
@@ -34,8 +35,7 @@ int main() {
     return 0;
 }
 
-*/
-
+//Excercise
 void addTen(int x) {
     x += 10;
 }
@@ -46,4 +46,33 @@ int main() {
     std::cout << num << "\n";
     return 0;
 }
+
+//Excercise
+void addTen(int* p) {
+    *p += 10;
+}
+
+int main() {
+    int num = 5;
+    addTen(&num);
+    std::cout << num << "\n";
+    return 0;
+}
+*/
+//Excercise
+void addTen(int& x) {
+    x += 10;
+}
+
+int main() {
+    int num = 5;
+    addTen(num);
+    std::cout << num << "\n";
+    return 0;
+}
+
+
+
+
+
 
