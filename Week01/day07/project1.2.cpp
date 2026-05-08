@@ -39,20 +39,72 @@ Rules:
 
 double calcMean(double score[], int size) {
     double sum = 0;
-    for (int i=1; i < size; i++) {
+    for (int i = 0; i < size; i++) {
         sum += score[i];
     }
-    return sum;
+    return (double) sum/size;
 }
+
+double calcMax(double score[], int size) {
+    double max = score[0];
+    for (int i = 1; i < size; i++) {
+        if (score[i] > max) {
+            max = score[i];
+        }
+    }
+    return max;
+}
+
+double calcMin(double score[], int size) {
+    double min = score[0];
+    for (int i = 1; i < size; i++) {
+        if (score[i] < min) {
+            min = score[i];
+        }
+    }
+    return min;
+}
+
+double calcRange(double score[], int size) {
+    return calcMax(score, size) - calcMin(score, size);
+}
+
+int calcCount(double score[], int size, double threshold) {
+    int count = 0;
+    for(int i = 0; i < size; i++) {
+        if (score[i] > threshold) {
+            count++;
+        }
+    }
+    return count;
+}
+
+double passRate(double score[], int size, double threshold) {
+    return (double) calcCount(score, size, threshold)/size * 100;
+}
+
 
 void print(std::string label, double value) {
     std::cout << label << ": " << value << "%" << "\n";
 }
 
+void print(std::string label, int value) {
+    std::cout << label << ": " << value << "\n";
+}
+
+
+
 int main() {
     double score[10] = {72.5, 88.0, 65.3, 91.2, 78.6, 85.0, 55.8, 93.4, 70.1, 82.7};
 
+    std::cout << "=== Student Grade Report ===" << "\n";
     print("Class average", calcMean(score, 10));
+    print("Highest score", calcMax(score, 10));
+    print("Lowest score", calcMin(score, 10));
+    print("Score Range", calcRange(score, 10));
+    print("Students passing (>=60%)", calcCount(score, 10, 80.0));
+    print("Pass rate", passRate(score, 10, 80.0));
+    std::cout << "============================" << "\n";
     return 0;
 }
 
