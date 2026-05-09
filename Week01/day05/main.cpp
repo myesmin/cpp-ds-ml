@@ -71,7 +71,7 @@ int main() {
     return 0;
 }
 
-
+//excercises 
 int main() {
     int matrix[2][3] = {
         {1, 2, 3},
