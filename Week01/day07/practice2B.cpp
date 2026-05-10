@@ -1,5 +1,5 @@
 /*
-CUNY Practice Problem 2B — Reverse a String
+Practice Problem 2B — Reverse a String
 --------------------------------------------
 Write a function:
     std::string reverseString(std::string word)
