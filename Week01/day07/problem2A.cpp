@@ -1,5 +1,5 @@
 /*
-Practice Problem 2 — Palindrome Check
+Practice Problem 2A — Palindrome Check
 -------------------------------------------
 Write a function:
     bool isPalindrome(std::string word)

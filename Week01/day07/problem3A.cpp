@@ -1,6 +1,6 @@
 /*
 =================================================
-Practice Problem 3 — FizzBuzz
+Practice Problem 3A — FizzBuzz
 =================================================
 
 Write a function:
@@ -27,24 +27,20 @@ Hints:
 */
 
 #include <iostream>
-using namespace std;
 
 void fizzBuzz(int n) {
     for (int i = 1; i <= n; i++) {
-
-        if (i % 3 == 0 && i % 5 == 0) {
-            cout << "FizzBuzz ";
-        }
-        else if (i % 3 == 0) {
-            cout << "Fizz ";
-        }
-        else if (i % 5 == 0) {
-            cout << "Buzz ";
-        }
-        else {
-            cout << i << " ";
-        }
+    if (i % 3 == 0 && i % 5 == 0) {  
+        std::cout << "FizzBuzz" << " ";
+    } else if ( i % 3 == 0) {
+        std::cout << "Fizz" << " ";
+    } else if (i % 5 == 0) {
+        std::cout << "Buzz" << " ";
+    } else {
+        std::cout << i << " ";
+        } 
     }
+    std::cout << "\n";
 }
 
 int main() {
