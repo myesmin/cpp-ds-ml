@@ -54,7 +54,6 @@ int main() {
     return 0;
 }
 
-
 //using char 
 #include <iostream>
 char getGrade(double score) {
@@ -73,7 +72,6 @@ int main() {
     std::cout << getGrade(55.8) << "\n";
     return 0;
 }
-
 */
 
 // using for loop
